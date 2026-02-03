@@ -1,3 +1,8 @@
+# Name: Ariana Fafach
+# Date: 2/3/2026
+# Title: Program #2: Age Classifier
+
+
 # Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an
 #  adult.  Following are the guidelines:
 
@@ -30,6 +35,6 @@ def categorize_age(age):
 if __name__ == '__main__':
     # Local variables
     # Get age from the user.
-    age1 = float(input("Enter the person's age: "))
+    age = float(input("Enter the person's age: "))
     # Display the age
-    ageBucket = categorize_age(age1)
+    ageBucket = categorize_age(age)
