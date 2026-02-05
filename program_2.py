@@ -1,4 +1,10 @@
-# Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an adult.  Following are the guidelines:
+# Name: Ariana Fafach
+# Date: 2/3/2026
+# Title: Program #2: Age Classifier
+
+
+# Write a program that asks the user to enter a person's age.  The program should display a message indicating whether the person is an infant, a child, a teenager, or an
+#  adult.  Following are the guidelines:
 
 # If the person is 1 year old or less, it should display "infant" (without quotes).
 # If the person is older than 1 year, but younger than 13 years, it should display "child".
@@ -6,13 +12,21 @@
 # If the person is at least 20 year old, it should display "adult".
 
 def categorize_age(age):
-    ageCategory = "TBD"
     ######################
-    # WRITE YOUR CODE HERE
+    if age < 0:
+        print("Are you crazy?")
+    elif age <= 1:
+        print("The person is an infant.")
+    elif age > 1 and age < 13:
+        print("The person is a child.")
+    elif age >= 13 and age < 20:
+        print("The person is a teenager.")
+    elif age >= 20:
+        print("The person is an adult.")
     ######################
 
 
-    return ageCategory
+    return
 
 
 #### This piece of the code has been done for you,
@@ -24,4 +38,3 @@ if __name__ == '__main__':
     age = float(input("Enter the person's age: "))
     # Display the age
     ageBucket = categorize_age(age)
-    print (ageBucket)
